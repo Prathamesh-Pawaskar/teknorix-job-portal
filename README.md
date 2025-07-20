@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+Technorix Job Portal
+This project is a React-based frontend application for a job portal, designed to display job openings, allow users to view job details, and provide options for filtering, searching, and applying to jobs. It interacts with an external API to fetch job data.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+Features
 
-## Available Scripts
+Technologies Used
 
-In the project directory, you can run:
+Project Structure
 
-### `npm start`
+Known Issues
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+How to Run Locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Features
+Browse Job Openings: View a list of available job positions, categorized by department.
 
-### `npm test`
+Job Search & Filtering:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Search for jobs by keywords.
 
-### `npm run build`
+Filter jobs by Department, Location, and Function.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Display active filters as removable chips.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Job Details Page:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+View comprehensive details for a specific job opening, including title, department, location, type, experience, and a full description.
 
-### `npm run eject`
+"Apply Now" button to direct users to the external application URL.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+"Back to Job Openings" navigation.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Social sharing options for Facebook, LinkedIn, and Twitter to share job listings.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Responsive Design: The layout adapts to various screen sizes for an optimal viewing experience.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Loading & Error States: Provides clear feedback to the user during data fetching and in case of errors.
 
-## Learn More
+Component-Based Architecture: Built with reusable React components for maintainability and scalability.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Technologies Used
+React: A JavaScript library for building user interfaces.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Material-UI (MUI): A comprehensive suite of React components that implements Google's Material Design.
 
-### Code Splitting
+React Router DOM: For declarative routing within the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Custom API Integration: Fetches job data from an external API (e.g., Jobsoid API).
 
-### Analyzing the Bundle Size
+Project Structure
+The project follows a standard React application structure:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+job-portal-frontend/
+├── node_modules/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── common/ # Reusable UI components (e.g., Loader, ErrorMessage, JobCard)
+│ │ │ ├── Loader.js
+│ │ │ ├── ErrorMessage.js
+│ │ │ └── JobCard.js
+│ │ └── filters/ # Components related to job filtering
+│ │ └── JobFilter.js
+│ ├── pages/ # Page-level components (e.g., JobsPage, JobDetailsPage)
+│ │ ├── JobsPage.js
+│ │ └── JobDetailsPage.js
+│ ├── utils/ # Utility functions (e.g., API calls)
+│ │ └── api.js
+│ ├── App.css
+│ ├── App.js
+│ └── index.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
 
-### Making a Progressive Web App
+Known Issues
+During development, it was observed that the Jobsoid API's filtering capability (specifically for location and department filters) was not functioning as expected based on the documentation. This means that while the frontend sends the correct filter parameters, the API might not return filtered results accurately, or it may require a different approach to filtering directly on the API side.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+How to Run Locally
+Follow these steps to set up and run the project on your local machine:
 
-### Advanced Configuration
+Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+git clone https://github.com/Prathamesh-Pawaskar/teknorix-job-portal.git
 
-### Deployment
+cd job-openings-portal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Install dependencies:
 
-### `npm run build` fails to minify
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Start the development server:
+
+npm start
+
+The application will open in your browser at http://localhost:3000.
