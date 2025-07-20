@@ -4,31 +4,34 @@
   
   ## Table of Contents
   
-  -Features
-  -Technologies Used
-  -Project Structure
-  -Known Issues
-  -How to Run Locally
+  •  Features
+  •  Technologies Used
+  •  Project Structure
+  •  Known Issues
+  •  How to Run Locally
+
   
   ## Features
   
-  -**Browse Job Openings:**
-   View a list of available job positions, categorized by department.
-  -Job Search & Filtering
-  -Search for jobs by keywords.
-  -Filter jobs by Department, Location, and Function.
-  -Display active filters as removable chips.
-  -Job Details Page
-  -View comprehensive job details: title, department, location, type, experience, and full description.
-  -"Apply Now" button redirects users to the external application URL.
-  -"Back to Job Openings" for easy navigation.
-  -Social sharing options for Facebook, LinkedIn, and Twitter.
-  -**Responsive Design:**
-   Layout adapts to various screen sizes for optimal experience.
-  -**Loading & Error States:**
-   Clear feedback to users during data fetching and error scenarios.
-  -**Component-Based Architecture:**
-   Built using reusable React components for better maintainability and scalability.
+  •	Browse Job Openings
+    View a list of available job positions, categorized by department.
+  •	Job Search & Filtering
+    o	Search for jobs by keywords.
+    o	Filter jobs by Department, Location, and Function.
+    o	Display active filters as removable chips.
+  •	Job Details Page
+    o	View comprehensive job details: title, department, location, type, experience, and full description.
+    o	"Apply Now" button redirects users to the external application URL.
+    o	"Back to Job Openings" for easy navigation.
+    o	Social sharing options for Facebook, LinkedIn, and Twitter.
+  •	Responsive Design
+    Layout adapts to various screen sizes for optimal experience.
+  •	Loading & Error States
+    Clear feedback to users during data fetching and error scenarios.
+  •	Component-Based Architecture
+    Built using reusable React components for better maintainability and scalability.
+
+
   
   ## Technologies Used
   
@@ -62,6 +65,7 @@
   ├── package-lock.json
   ├── package.json
   └── README.md
+
   
   ## Known Issues
   
