@@ -71,13 +71,14 @@ Follow these steps to set up and run the project on your local machine:
 1.  **Clone the repository:**
 
     git clone https://github.com/Prathamesh-Pawaskar/teknorix-job-portal.git
+
     cd teknorix-job-portal
 
-2.  **Install dependencies:**
+3.  **Install dependencies:**
 
     npm install
 
-3.  **Start the development server:**
+4.  **Start the development server:**
 
     npm start
     
