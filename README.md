@@ -38,27 +38,49 @@ This project is a React-based frontend application for a job portal, designed to
 The project follows a standard React application structure:
 
 job-portal-frontend/
+
 ├── node_modules/
+
 ├── public/
+
 ├── src/
+
 │   ├── components/
+
 │   │   ├── common/         # Reusable UI components (e.g., Loader, ErrorMessage, JobCard)
+
 │   │   │   ├── Loader.js
+
 │   │   │   ├── ErrorMessage.js
+
 │   │   │   └── JobCard.js
+
 │   │   └── filters/        # Components related to job filtering
+
 │   │       └── JobFilter.js
+
 │   ├── pages/              # Page-level components (e.g., JobsPage, JobDetailsPage)
+
 │   │   ├── JobsPage.js
+
 │   │   └── JobDetailsPage.js
+
 │   ├── utils/              # Utility functions (e.g., API calls)
+
 │   │   └── api.js
+
 │   ├── App.css
+
 │   ├── App.js
+
 │   └── index.js
+
 ├── .gitignore
+
 ├── package-lock.json
+
 ├── package.json
+
 └── README.md
 
 ## Known Issues
