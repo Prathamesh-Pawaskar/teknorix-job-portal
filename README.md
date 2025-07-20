@@ -36,6 +36,7 @@ This project is a React-based frontend application for a job portal, designed to
 ## Project Structure
 
 The project follows a standard React application structure:
+
 job-portal-frontend/
 ├── node_modules/
 ├── public/
